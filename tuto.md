@@ -83,5 +83,70 @@ function Enfant() => {
 
 Afficher une liste des messages de vos enfants [{"enfant1":"Hello"},{"enfant2":"Hey"},{"enfant1":"Salut"},{"enfant1":"Yo"}],
 
+
+## Calcul au sein de la page
+
+Faire la multiplication de 2 inputs
+
+# Communiquer avec les api
+
+Installer axios
+
+`npm install axios`
+
+Compléter le code à trou
+
+```ts
+const axelor_url = "https://project-apexenergies.axelor.com/";
+
+ export default class AxelorAPI  {
+    static cookie = "";
+ 
+    static login() {
+    
+    }
+ 
+    static read_all() {
+        return {};
+    }
+
+    static read(model: string,id: string | number | undefined) {
+        return axios.get(`${axelor_url}ws/rest/{model}/{idd}`);
+    }
+    
+    static create() {
+        return {};
+    }
+    
+    static update(model: string,id: string | number | undefined) {
+        return {};
+    }
+
+    static delete(calc: Calc) {
+        return {};
+    }
+
+    static export(calc: Calc) {
+        return {};
+    }
+}
+
+## Appeller votre api au chargement de la page
+
+## Externaliser le useEffect
+
+
+# CORS error avec le back-end
+
+
+# Hooks + compliqué
+
 # React bonne pratique
-- On décompose 
+- Décomposer les composants graphiques avec seulement css
+- Découper le code. API, VUE, MODEL, FONCTION
+- Une vue = une LISTE de composant
+- Une fonction = un ensemble de fonction permattant de réaliser une seule chose ou une chose qui se ressemble. PAS DE FICHIER AVEC PLUSIEURS FONCTIONNALITE A L'INTERIEUR (CRUD et des calculs par ex). Un fichier par user story. Tant pis si le fichier ne fait que 5 lignes.
+- Un model = définit les champs, important pour la compréhension général du code
+
+
+
