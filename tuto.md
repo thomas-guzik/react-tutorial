@@ -1,6 +1,6 @@
 # React education
 
-# Installer npm
+# Installer npm & webstorm
 
 # Créer votre première application
 
