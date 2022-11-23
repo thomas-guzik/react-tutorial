@@ -122,15 +122,15 @@ const axelor_url = "https://project-apexenergies.axelor.com/";
         return {};
     }
 
-    static delete(calc: Calc) {
+    static delete() {
         return {};
     }
 
-    static export(calc: Calc) {
+    static export() {
         return {};
     }
 }
-
+```
 ## Appeller votre api au chargement de la page
 
 ## Externaliser le useEffect
