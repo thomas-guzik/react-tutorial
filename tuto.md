@@ -77,9 +77,11 @@ function Parent() => {
 
 ```jsx
 function Enfant() => {
-    return <input type="text" onChange={(s) => {}}/>
+    return <input type="text" onChange={(e: ChangeEvent<HTMLInputElement>) => {return e.target.value;}}/>
 }
 ```
+
+Afficher une liste des messages de vos enfants [{"enfant1":"Hello"},{"enfant2":"Hey"},{"enfant1":"Salut"},{"enfant1":"Yo"}],
 
 # React bonne pratique
 - On décompose 
